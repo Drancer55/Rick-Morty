@@ -1,21 +1,65 @@
-.App {
-  text-align: center;
-}
+@keyframes background {
+  0% {
+    background-image: url('./assets/Backgrounds/UniversoPlaneta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  18% {
+    background-image: url('./assets/Backgrounds/UniversoPlaneta2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  34% {
+    background-image: url('./assets/Backgrounds/Universo\ MOntañas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  50% {
+    background-image: url('./assets/Backgrounds/UniversoDesierto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  68% {
+    background-image: url('./assets/Backgrounds/UniversoNubes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  84% {
+    background-image: url('./assets/Backgrounds/UniversoRock.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  100% {
+    background-image: url('./assets/Backgrounds/UniversoTierra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  text-align: center;
+  animation-name: background;
+  animation-duration: 100s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
   min-height: 100vh;
+}
+
+.App-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +68,3 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
